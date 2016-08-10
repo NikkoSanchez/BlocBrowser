@@ -78,7 +78,7 @@
 
 #pragma mark - AwesomeFloatingToolbar
 
-- (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
+- (void) floatingToolBar:(AwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
     if ([title isEqual:NSLocalizedString(@"Back", @"Back command")]) {
         [self.webView goBack];
     } else if ([title isEqual:NSLocalizedString(@"Forward", @"Forward command")]) {
@@ -90,7 +90,7 @@
     }
 }
 
-- (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset {
+- (void) floatingToolBar:(AwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset {
     CGPoint startingPoint = toolbar.frame.origin;
     CGPoint newPoint = CGPointMake(startingPoint.x + offset.x, startingPoint.y + offset.y);
     
