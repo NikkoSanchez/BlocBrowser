@@ -78,7 +78,7 @@
 
 #pragma mark - AwesomeFloatingToolbar
 
-- (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
+- (void) floatingToolBar:(AwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
     if ([title isEqual:kWebBrowserBackString]) {
         [self.webView goBack];
     } else if ([title isEqual:kWebBrowserForwardString]) {
